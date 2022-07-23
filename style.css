@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.parent {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 1440px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.child {
+    display: flex;
+    height: 75%;
+    width: 85%;
+}
+
+.left {
+    display: inline;
+    margin-right: 1rem;
+    width: 73%;
+    height: 100%;
+}
+
+.right {
+    background-color: white;
+    padding: 1rem;
+    width: 27%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.blue-grey {
+margin-bottom: 1rem;
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.white-black {
+    height: 48%;
+    width: 100%;
+    display: flex;
+}
+.blue {
+    padding: 1rem;
+    border-radius: 10px;
+    background-size: 40%;
+    background: hsl(263, 55%, 52%);
+    height: 100%;
+    width: 66%;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.img {
+    top: 0;
+    z-index: 2;
+    position: absolute;
+    height: 3rem;
+    right: 3rem;
+}
+
+.img img {
+
+    height: 4.5rem;
+    display: flex;
+    justify-items: right;
+}
+
+.top {
+   
+    display: flex;
+    height: 2rem;
+    margin: 0;
+
+}
+
+.top img {
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+  margin: .3rem;
+}
+
+.name {
+    padding-left: .5rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  width: 80%;
+}
+
+.name h5 {
+    height: 1rem;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.name p {
+    opacity: 50%;
+    height: 1rem;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.card {
+    width: 100%;
+    color: white;
+    z-index: 2;
+    height: 10rem ;
+}
+
+.card h4 {
+    padding-top: .8rem;
+    height: 3rem;
+}
+
+.card p {
+    opacity: 70%;
+    padding-top: 1.7rem;
+    font-size: 13px;
+    
+}
+
+.grey {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    height: 100%;
+    width: 32%;
+    padding: .7rem;
+}
+
+.white {
+    padding: 1rem;
+    border-radius: 10px;
+    height: 100%;
+    width: 32%;
+    background-color: white;
+    margin-right: 1rem;
+}
+
+.black {
+    padding: 1rem;
+    margin: 0;
+    border-radius: 10px;
+    height: 100%;
+    width: 66%;
+    background-color: black;
+    color: white;
+}
+@media only screen and (max-width: 375px) {
+    .parent {
+        overflow: scroll;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 100% auto;
+        width: 100%;
+        background-color: hsl(210, 46%, 95%);
+    }
+
+    .child {
+        overflow:hidden;
+        display:inline;
+        width: 100%;
+        height: 50rem;
+    }
+
+    .left {
+        display:inline;
+        width: 100%;
+        height: 70% auto;
+
+    }
+
+    .right {
+        color: black;
+        height:30rem;
+        padding: 1rem;
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+    
+    }
+
+    .blue-grey {
+        display:inline;
+        width: 100%;
+
+    }
+
+    .white-black {
+        height: 50%;
+        width: 100%;
+        display:inline;
+    }
+
+    .blue {
+        width: 91%;
+        height: 50%;
+        margin: 1rem;
+    }
+
+    .grey {
+        width: 91%;
+        height: 50%;
+        margin: 1rem;
+    }
+
+    .white {
+        background-color: white;
+        width: 91%;
+        height: 50%;
+        margin: 1rem;
+      
+    }
+
+    .black {
+        width: 91%;
+        height: 50%;
+        margin: 1rem;
+    }
+}
